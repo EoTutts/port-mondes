@@ -1,0 +1,13 @@
+{
+  "id": "port-mondes",
+  "name": "Port Mondes",
+  "version": "0.1.0",
+  "contract": 1,
+  "runtime": "native",
+  "exec": "sdk/launch.sh",
+  "languages": [
+    "pt-BR",
+    "en-US",
+    "fr-FR"
+  ]
+}
