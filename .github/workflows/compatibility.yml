@@ -18,6 +18,12 @@ jobs:
           assert hashlib.sha256(Path('base.zip').read_bytes()).hexdigest()==m['base_package_sha256']
           PY
           unzip -q base.zip -d base
+          if env PYTHONHOME="$PWD/base/port-mondes/python38/usr" LD_LIBRARY_PATH="$PWD/base/port-mondes/python38/usr/lib:$PWD/base/port-mondes/python38/usr/lib/aarch64-linux-gnu" "$PWD/base/port-mondes/python38/usr/bin/python3.8" -c 'import ctypes' > baseline.log 2>&1; then
+            echo 'Runner already supplies the legacy libffi ABI; no baseline failure here.'
+          else
+            cat baseline.log
+            grep -F 'libffi.so.6' baseline.log
+          fi
           python3 compat/build_overlay.py
           cp -a overlay/. base/port-mondes/
       - name: Import native ARM64 Python, ctypes, Pillow and SDK

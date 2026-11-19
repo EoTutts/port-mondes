@@ -146,5 +146,10 @@
       }
     ]
   },
-  "native_arm64": "CI pending; see PR checks"
+  "native_arm64": "passed on Ubuntu 24.04 ARM64; physical dArkOS validation pending",
+  "ci": {
+    "conclusion": "success",
+    "url": "https://github.com/EoTutts/port-mondes/actions/runs/44599563447",
+    "environment": "Ubuntu 24.04 ARM64; native Python 3.8, ctypes/Pillow and 90 engine checks"
+  }
 }
