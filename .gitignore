@@ -2,3 +2,8 @@
 *.tar.gz
 saves/
 logs/
+**/bin/
+**/obj/
+**/__pycache__/
+overlay/
+base/

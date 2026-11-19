@@ -2,9 +2,11 @@
   "slug": "port-mondes",
   "id": "port-mondes",
   "name": "Port Mondes",
-  "version": "0.1.0",
-  "tag": "v0.1.0-distribution.20261106",
-  "download": "https://github.com/EoTutts/port-mondes/releases/download/v0.1.0-distribution.20261106/port-mondes-linux-arm64.zip",
-  "package_sha256": "86707e261dfd1acddf4e975948dce91e7a23430dbf52cdc1d0c1b3e456160d06",
-  "package_bytes": 492776181
+  "version": "0.1.1",
+  "tag": "v0.1.1-luma.20261119",
+  "download": "https://github.com/EoTutts/port-mondes/releases/download/v0.1.1-luma.20261119/port-mondes-linux-arm64.zip",
+  "package_sha256": "f20475e0d9d7f4f76ebed23a7bb36e3dc06312fd07e441758996e53f02937bcd",
+  "package_bytes": 492601923,
+  "base_package_sha256": "86707e261dfd1acddf4e975948dce91e7a23430dbf52cdc1d0c1b3e456160d06",
+  "base_download": "https://github.com/EoTutts/port-mondes/releases/download/v0.1.0-distribution.20261106/port-mondes-linux-arm64.zip"
 }

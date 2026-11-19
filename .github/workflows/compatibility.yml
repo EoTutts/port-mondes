@@ -1,0 +1,33 @@
+name: Luma compatibility
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: python3 compat/test_speech.py
+      - name: Download and verify previous full package
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,urllib.request
+          from pathlib import Path
+          m=json.loads(Path('PACKAGE.json').read_text())
+          urllib.request.urlretrieve(m['base_download'],'base.zip')
+          assert hashlib.sha256(Path('base.zip').read_bytes()).hexdigest()==m['base_package_sha256']
+          PY
+          unzip -q base.zip -d base
+          python3 compat/build_overlay.py
+          cp -a overlay/. base/port-mondes/
+      - name: Import native ARM64 Python, ctypes, Pillow and SDK
+        run: |
+          A11Y_GAME_DIR="$PWD/base/port-mondes" sh base/port-mondes/sdk/launch.sh --check-runtime
+      - name: Original engine, three languages, graphics and spoken fallback
+        run: |
+          export A11Y_GAME_DIR="$PWD/base/port-mondes"
+          export PYTHONHOME="$A11Y_GAME_DIR/python38/usr"
+          export PYTHONPATH="$A11Y_GAME_DIR/vendor:$A11Y_GAME_DIR/engine:$A11Y_GAME_DIR/sdk"
+          export LD_LIBRARY_PATH="$A11Y_GAME_DIR/compat/lib:$PYTHONHOME/lib:$PYTHONHOME/lib/aarch64-linux-gnu"
+          export PORT_MONDES_TEST_PACKAGE="$A11Y_GAME_DIR"
+          "$PYTHONHOME/bin/python3.8" compat/test_candidate.py

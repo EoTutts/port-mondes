@@ -1,0 +1,51 @@
+{
+  "sha256": "f20475e0d9d7f4f76ebed23a7bb36e3dc06312fd07e441758996e53f02937bcd",
+  "bytes": 492601923,
+  "changed_files": [
+    {
+      "path": "game.json",
+      "before": "0291834879d8d5b94021b12635aa61d94aaf10a28333d2e0f0bb7ece933c2755",
+      "after": "6c128a312e338e93b2a47673e512c9da2fdd6af3ce33c656595e0f6c420bee3f"
+    },
+    {
+      "path": "sdk/launch.sh",
+      "before": "6ad062c0315d93481fa46baf42fd647c1eca94477f2a23a5194a200af188bfbe",
+      "after": "e78615694c00e64c2c802e2bde87fdd382e9ccf62b88503592f5b9de0271e7fe"
+    },
+    {
+      "path": "vendor/r36s_a11y/game.py",
+      "before": "dc418d43804c67153f855d19c3c33c6fe2a89819263e76e4bde54dbe376a36ba",
+      "after": "eaee11f34c44a4232cfa967c900149cbc2e0b81fdfe2404a77e63b8fd946c353"
+    },
+    {
+      "path": "vendor/r36s_a11y/speech.py",
+      "before": "74bdf8cc2fd82616c55da6cf5918fb15d8b07c9a5a700fbe731e2d85d16f6c01",
+      "after": "e4db5b6b74cdd1ba9393a6d3d87fedbc7480d643eaf6275111ad0f384fda5711"
+    },
+    {
+      "path": "COMPATIBILITY.md",
+      "before": null,
+      "after": "ab58a071b08aded9412c0b666ac943dd106a52ccd75aa3c7131531c2b0fcc49a"
+    },
+    {
+      "path": "compat/lib/libffi.so.6",
+      "before": null,
+      "after": "2acd6e63b972253519bb9aeb35e809058c2a86fcae0393e4a1e04dd9f6a280a1"
+    },
+    {
+      "path": "compat/licenses/libffi6-COPYRIGHT.txt",
+      "before": null,
+      "after": "7258c8acc378030d8dbe1fcdf394e915769fa31dcbaf3d2991d9a79891f3bcdc"
+    },
+    {
+      "path": "compat/licenses/libffi6-origin.json",
+      "before": null,
+      "after": "a8b4f91faf55a909ee249c6c09e86a1d866cabff9cb156c0f24fc53c6f1e08d4"
+    },
+    {
+      "path": "vendor/r36s_a11y/speech_history.py",
+      "before": null,
+      "after": "7fd0c055249e49fee142f5207df0d15e0a4fb28d80d7ac0de49403b6812a40a4"
+    }
+  ]
+}

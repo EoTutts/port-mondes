@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-19",
+  "physical_darkos_test": "pending; no access to friend's device",
+  "speech": {
+    "passed": true,
+    "checks": 7,
+    "transport": "simulated"
+  },
+  "archive_crc": "passed",
+  "save_files_included": false,
+  "base_sha256": "86707e261dfd1acddf4e975948dce91e7a23430dbf52cdc1d0c1b3e456160d06",
+  "package_sha256": "f20475e0d9d7f4f76ebed23a7bb36e3dc06312fd07e441758996e53f02937bcd",
+  "engine": {
+    "passed": true,
+    "scope": "offline actual Engine and SDK input; mocked audio/speech/SDL devices",
+    "results": [
+      {
+        "language": "pt-BR",
+        "display_mode": "gui",
+        "checks": [
+          "A11Y language selected",
+          "startup logo",
+          "SDK B opens menu",
+          "SDK B opens adventure",
+          "SDK down selection",
+          "locked campaign remains locked",
+          "new adventure chooses a save slot",
+          "original Francois opening",
+          "Fn combo does not advance story",
+          "repeat speaks current screen",
+          "button release ignored",
+          "SDL present or spoken fallback active",
+          "SCREEN zero disables rasterizer",
+          "SCREEN transition respects display availability",
+          "speech uses selected language",
+          "shutdown does not write saves",
+          "audio channels closed",
+          "runtime pending stopped"
+        ],
+        "frame_count": 16,
+        "speech_count": 13
+      },
+      {
+        "language": "en-US",
+        "display_mode": "gui",
+        "checks": [
+          "A11Y language selected",
+          "startup logo",
+          "SDK B opens menu",
+          "SDK B opens adventure",
+          "SDK down selection",
+          "locked campaign remains locked",
+          "new adventure chooses a save slot",
+          "original Francois opening",
+          "Fn combo does not advance story",
+          "repeat speaks current screen",
+          "button release ignored",
+          "SDL present or spoken fallback active",
+          "SCREEN zero disables rasterizer",
+          "SCREEN transition respects display availability",
+          "speech uses selected language",
+          "shutdown does not write saves",
+          "audio channels closed",
+          "runtime pending stopped"
+        ],
+        "frame_count": 16,
+        "speech_count": 13
+      },
+      {
+        "language": "fr-FR",
+        "display_mode": "gui",
+        "checks": [
+          "A11Y language selected",
+          "startup logo",
+          "SDK B opens menu",
+          "SDK B opens adventure",
+          "SDK down selection",
+          "locked campaign remains locked",
+          "new adventure chooses a save slot",
+          "original Francois opening",
+          "Fn combo does not advance story",
+          "repeat speaks current screen",
+          "button release ignored",
+          "SDL present or spoken fallback active",
+          "SCREEN zero disables rasterizer",
+          "SCREEN transition respects display availability",
+          "speech uses selected language",
+          "shutdown does not write saves",
+          "audio channels closed",
+          "runtime pending stopped"
+        ],
+        "frame_count": 16,
+        "speech_count": 13
+      },
+      {
+        "language": "pt-BR",
+        "display_mode": "headless",
+        "checks": [
+          "A11Y language selected",
+          "startup logo",
+          "SDK B opens menu",
+          "SDK B opens adventure",
+          "SDK down selection",
+          "locked campaign remains locked",
+          "new adventure chooses a save slot",
+          "original Francois opening",
+          "Fn combo does not advance story",
+          "repeat speaks current screen",
+          "button release ignored",
+          "SDL present or spoken fallback active",
+          "SCREEN zero disables rasterizer",
+          "SCREEN transition respects display availability",
+          "speech uses selected language",
+          "shutdown does not write saves",
+          "audio channels closed",
+          "runtime pending stopped"
+        ],
+        "frame_count": 0,
+        "speech_count": 13
+      },
+      {
+        "language": "pt-BR",
+        "display_mode": "failed",
+        "checks": [
+          "A11Y language selected",
+          "startup logo",
+          "SDK B opens menu",
+          "SDK B opens adventure",
+          "SDK down selection",
+          "locked campaign remains locked",
+          "new adventure chooses a save slot",
+          "original Francois opening",
+          "Fn combo does not advance story",
+          "repeat speaks current screen",
+          "button release ignored",
+          "SDL present or spoken fallback active",
+          "SCREEN zero disables rasterizer",
+          "SCREEN transition respects display availability",
+          "speech uses selected language",
+          "shutdown does not write saves",
+          "audio channels closed",
+          "runtime pending stopped"
+        ],
+        "frame_count": 0,
+        "speech_count": 13
+      }
+    ]
+  },
+  "native_arm64": "CI pending; see PR checks"
+}
