@@ -10,7 +10,9 @@ Não há processo externo de TTS por mensagem. O transporte continua sendo SSIP 
 
 O `_ctypes` do CPython 3.8 ARM64 do pacote depende de `libffi.so.6`, que não acompanhava a distribuição. O launcher agora inclui `compat/lib` e o diretório multiarch privado no caminho de bibliotecas. A biblioteca de ABI 6 vem do pacote oficial Ubuntu Eoan, com SHA-256 conferido no índice arquivado; versão, origem e licença estão em `compat/native`. Nenhuma biblioteca do sistema é instalada ou substituída. O bytecode original continua no Python 3.8.
 
-Diagnóstico no console: execute `sh sdk/launch.sh --check-runtime` dentro da pasta do jogo, com `A11Y_GAME_DIR` apontando para ela. A saída deve confirmar ctypes, Pillow e SDK. Se ainda falhar no dArkOS, copie o erro da Página no PC → Registros. Sem o registro original, a dependência ausente é uma falha identificada do pacote e uma explicação provável, não uma confirmação de todas as causas possíveis de não abrir.
+O log enviado em 19/11/2026 confirmou a falha original em `import ctypes`: `ImportError: libffi.so.6: cannot open shared object file`. A CI também reproduziu esse erro no pacote anterior e carregou ctypes/Pillow/SDK com a correção, seguida de 90 verificações do motor em Ubuntu 24.04 ARM64. Isso confirma a causa deste traceback; a validação física da nova revisão no dArkOS permanece pendente.
+
+Diagnóstico no console: execute `sh sdk/launch.sh --check-runtime` dentro da pasta do jogo, com `A11Y_GAME_DIR` apontando para ela. A saída deve confirmar ctypes, Pillow e SDK. Se aparecer outro erro no dArkOS, copie o registro da Página no PC → Registros.
 
 ## Fontes consultadas
 

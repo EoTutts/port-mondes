@@ -151,5 +151,11 @@
     "conclusion": "success",
     "url": "https://github.com/EoTutts/port-mondes/actions/runs/44599563447",
     "environment": "Ubuntu 24.04 ARM64; native Python 3.8, ctypes/Pillow and 90 engine checks"
+  },
+  "user_report": "Confirmed: original dArkOS traceback fails in import ctypes with missing libffi.so.6; corrected build not yet tested on that device",
+  "baseline_arm64": {
+    "failed_as_expected": "ImportError: libffi.so.6: cannot open shared object file",
+    "fixed": "ctypes/Pillow/SDK import and 90 engine checks passed",
+    "url": "https://github.com/EoTutts/port-mondes/actions/runs/44600015083"
   }
 }
