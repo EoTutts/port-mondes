@@ -2,11 +2,11 @@
 
 Porte acessível do RPG Port Mondes, com exploração, combates por turnos, inventário, magia e aventuras em português, inglês e francês.
 
-Este é o repositório de distribuição dos pacotes preparados no projeto R36S. A versão interna do jogo é **0.1.0**; a release de distribuição é de 06/11/2026.
+Este é o repositório de distribuição dos pacotes preparados no projeto R36S. A versão interna do jogo é **0.1.1**; a release de distribuição é de 19/11/2026.
 
 ## Baixar
 
-[Pacote R36S ARM64](https://github.com/EoTutts/port-mondes/releases/download/v0.1.0-distribution.20261106/port-mondes-linux-arm64.zip) · [Release e SHA-256](https://github.com/EoTutts/port-mondes/releases/tag/v0.1.0-distribution.20261106)
+[Pacote R36S ARM64](https://github.com/EoTutts/port-mondes/releases/download/v0.1.1-luma.20261119/port-mondes-linux-arm64.zip) · [Release e SHA-256](https://github.com/EoTutts/port-mondes/releases/tag/v0.1.1-luma.20261119)
 
 ## Requisitos e estado
 
@@ -27,3 +27,7 @@ O pacote foi conferido quanto ao manifesto, executável e SHA-256. Não acompanh
 ## Créditos e licenças
 
 Preserva bytecode, textos, arte e sons do jogo original. A distribuição não altera a titularidade desses materiais; os adaptadores e bibliotecas mantêm seus próprios avisos. Os avisos de terceiros presentes no pacote devem ser mantidos. Não se atribui uma licença única a todo o conteúdo.
+
+## Correções de compatibilidade
+
+A revisão de 19/11/2026 corrige o uso da configuração de fala do Luma. [Causa, código, testes e reprodução](COMPATIBILITY.md). A validação física no dArkOS continua pendente.

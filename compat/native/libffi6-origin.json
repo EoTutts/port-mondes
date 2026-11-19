@@ -1,0 +1,9 @@
+{
+  "url": "https://old-releases.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi6_3.2.1-9_arm64.deb",
+  "package": "libffi6",
+  "version": "3.2.1-9",
+  "package_sha256": "9422643841503b91f7d9d215d21898b8a66f2fa9e98c7ce7689c835169808d38",
+  "library_sha256": "2acd6e63b972253519bb9aeb35e809058c2a86fcae0393e4a1e04dd9f6a280a1",
+  "private_path": "compat/lib/libffi.so.6",
+  "scope": "Only private CPython 3.8; no system install, no libffi8 alias"
+}
